@@ -1,0 +1,110 @@
+.main-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+    margin: 0 auto;
+    width: 375px;
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px #C6C6C6;
+    height: 67px;
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info {
+    margin: 10px 17px 10px 10px;
+    width: 348px;
+    height: 34px;
+    display: flex;
+}
+
+.post-image {
+    cursor: pointer;
+    background-image: url("images/gogh.png");
+    background-size: cover;
+    height: 375px;
+    width: 375px;
+    margin: 0px;
+}
+
+.post-bottom-content {
+    width: 346px;
+    height: 78px;
+    margin: 20px 20px 15px 10px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 104px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0;
+}
+
+.poster-name {
+    cursor: pointer;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+} 
+
+.poster-location {
+    cursor: pointer;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.commenter-name, .likes {
+    width: fit-content;
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+/* Images */
+
+.logo {
+    cursor: pointer;
+    width: 127px;
+    height: 33px;
+    padding: 15px;
+}
+
+.profile-picture {
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.avatar {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    margin-right: 7px;
+}
+
+.icons {
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+}
+
+.icons:hover,
+.icons:focus {
+    opacity: 0.5;
+}
