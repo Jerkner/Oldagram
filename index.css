@@ -108,3 +108,8 @@ p {
 .icons:focus {
     opacity: 0.5;
 }
+
+.like-icon-liked:hover,
+.like-icon-liked:focus {
+    opacity: 1;
+}
