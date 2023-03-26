@@ -109,7 +109,18 @@ p {
     opacity: 0.5;
 }
 
+.like-icon {
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+}
+
+.like-icon:hover,
+.like-icon:focus {
+    opacity: 0.5;
+}
+
 .like-icon-liked:hover,
-.like-icon-liked:focus {
-    opacity: 1;
+.like-icon-liked {
+    opacity: 1.0;
 }

@@ -6,20 +6,18 @@ likedState = false
 console.log(likedState)
 
 postImage.addEventListener("dblclick", function() {
-    increaseLikes()
+    if (likedState === false) {
+        increaseLikes()
+    }
 })
 
 likeIcon.addEventListener("click", function() {
-    if (likedState === true) {
-    likes.textContent = "69,420"
-    likedState = false
-    document.getElementById("like-icon").src = "images/like.jpg"
-    console.log(likedState) 
-    } else { increaseLikes()
-    likedState = true
-    document.getElementById("like-icon").src = "images/liked.png"
-    likeIcon.classList.toggle('like-icon-liked:hover', 'like-icon-liked:focus')
-}
+    if (likedState === false) {
+        increaseLikes()
+    } else {
+        decreaseLikes()
+        likedState = false
+    }
 })
 
 function increaseLikes() {
@@ -27,5 +25,14 @@ function increaseLikes() {
     likedState = true
     console.log(likedState)
     document.getElementById("like-icon").src = "images/liked.png"
-
+    likeIcon.classList.add('like-icon-liked')
 }
+
+function decreaseLikes() {
+    likes.textContent = "69,420"
+    likedState = false
+    console.log(likedState)
+    document.getElementById("like-icon").src = "images/like.jpg"
+    likeIcon.classList.remove('like-icon-liked')
+}
+
